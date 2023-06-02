@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+    --bs-sea-green: #17c3b2;
+    --bs-amaranth-purple: #A4243B;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -17,7 +19,8 @@
     --bs-cyan: #0dcaf0;
     --bs-black: #000;
     --bs-white: #fff;
-    --bs-gray: #6c757d;
+    --bs-gray: #707071;
+    --bs-gray-light: #BDBDBD;
     --bs-gray-dark: #343a40;
     --bs-gray-100: #f8f9fa;
     --bs-gray-200: #e9ecef;
@@ -34,18 +37,21 @@
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
+    --bs-light: #F5EDF0;
     --bs-dark: #212529;
+    --bs-sea-green-rgb: 23, 195, 178;
     --bs-primary-rgb: 13, 110, 253;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
     --bs-warning-rgb: 255, 193, 7;
     --bs-danger-rgb: 220, 53, 69;
-    --bs-light-rgb: 248, 249, 250;
+    --bs-light-rgb: 245, 237, 240;
     --bs-dark-rgb: 33, 37, 41;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
+    --bs-gray-rgb: 112, 112, 113;
+    --bs-gray-light-rgb: 189, 189, 189;
     --bs-body-color-rgb: 33, 37, 41;
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
@@ -75,8 +81,8 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-link-color: #0d6efd;
-    --bs-link-hover-color: #0a58ca;
+    --bs-link-color: #707071;
+    --bs-link-hover-color: #A4243B;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
 }
