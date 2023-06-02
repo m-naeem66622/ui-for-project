@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Single Book Detail Page</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom_styles.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5" href="#">Master Book Bank</a>
+                <div class="offcanvas offcanvas-center text-bg-light" data-bs-placement="center" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link active" aria-current="page" href="#">Novels</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">Academic Books</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">PPSC</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">Fictions</a>
+                            </li>
+                            <div class="d-lg-none d-flex">
+                                <li class="nav-item btn btn-sea-green fw-medium link-custom me-3 px-3 py-0">
+                                    <a class="nav-link" href="#">Signup</a>
+                                </li>
+                                <li class="nav-item btn btn-sea-green fw-medium link-custom px-3 py-0">
+                                    <a class="nav-link" href="#">Signin</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center list-unstyled">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item fw-medium">
+                            <a class="nav-link d-none d-lg-block" href="#">Signup</a>
+                        </li>
+                        <li class="nav-item fw-medium">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-magnifying-glass fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item fw-medium ps-2">
+                            <a href="#" class="nav-link position-relative">
+                                <i class="fas fa-bag-shopping fs-5"></i>
+                                <span
+                                    class="center position-absolute top-0 start-100 translate-middle-x bg-sea-green rounded-circle"
+                                    style="font-size: 12px;min-width: 20px;min-height: 20px;">
+                                    <span>5</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="width-100 d-flex center text-bg-sea-green">
+        <nav class="py-4"
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb m-0 fs-4">
+                <li class="breadcrumb-item"><a href="#"><strong>Home</strong></a></li>
+                <li class="breadcrumb-item"><a href="#"><strong>Categories</strong></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><strong>Novels</strong></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="product-images-container position-relative">
+                    <div class="product-label rounded-circle position-absolute onsale center text-bg-sea-green">
+                        <span>-29%</span>
+                    </div>
+                    <div class="product-image-wrap">
+                        <a href="#" class="d-flex justify-content-center">
+                            <img class="w-100" src="./images/1682872294840.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mt-4 mt-md-0">
+                <div class="product-summary-wrap text-gray">
+                    <h1>The Great Gatsby</h1>
+                    <h4>By <a href="#">Scott Fitzgerald</a></h4>
+                    <hr class="my-2">
+                    <p class="h5 text-success"><span class=" badge bg-success">In Stock</span></p>
+                    <p class="price fs-4 fw-semibold">
+                        <del aria-hidden="true" class="text-gray-light">₨720.00</del>
+                        <ins class="text-sea-green">₨510.00</ins>
+                    </p>
+                    <h6 class="">Publisher: <a href="#">Penguin Modern Classics</a></h6>
+                    <h6 class="">Language: <a href="#">English</a></h6>
+                    <h6 class="">Categories:
+                        <a class="me-2" href="#">Literature</a>
+                        <a href="#">Fiction</a>
+                    </h6>
+                    <h6 class="">Publish Date: July 2006</h6>
+                    <hr class="mt-2 mb-3">
+                    <label class="h6 mb-0">Quantity:</label>
+                    <span class="d-flex flex-wrap">
+                        <button class="btn btn-sea-green px-3 me-2 center mt-2">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <input readonly="" min="1" max="6" name="quantity" type="number"
+                            class="form-control w-auto mt-2" value="1">
+                        <button class="btn btn-sea-green px-3 ms-2 me-3 mt-2">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button class="btn btn-sea-green mt-2">Add to Cart</button>
+                    </span>
+                    <p class="h5 fw-semibold mt-2">Total: 13424</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="description" data-bs-toggle="tab" data-bs-target="#description-pane"
+                        type="button" role="tab" aria-controls="description-pane"
+                        aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="reviews" data-bs-toggle="tab" data-bs-target="#reviews-pane"
+                        type="button" role="tab" aria-controls="reviews-pane" aria-selected="false">Reviews (3)</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-4" id="myTabContent">
+                <div class="tab-pane fade" id="description-pane" role="tabpanel" aria-labelledby="description"
+                    tabindex="0">
+                    <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore facilis
+                        quod esse dignissimos, consectetur, molestiae corrupti ab eaque sapiente, repellat totam
+                        molestias omnis hic incidunt est provident! Eligendi ex inventore modi provident, exercitationem
+                        voluptatum corrupti asperiores recusandae saepe assumenda et maxime, a reiciendis magni ipsa
+                        incidunt, laborum quis totam molestiae excepturi sit adipisci. Veniam nostrum obcaecati ab saepe
+                        quaerat possimus asperiores tenetur exercitationem adipisci similique reprehenderit, ratione ut
+                        animi, quam iusto voluptatibus eligendi earum quidem modi. Dolore sequi repudiandae enim
+                        cupiditate culpa velit facere perspiciatis quod id a eius voluptatem ex ipsum autem recusandae,
+                        earum quibusdam maiores minima quae nam!</p>
+                </div>
+                <div class="tab-pane fade show active mx-2 mx-sm-3 mx-md-5" id="reviews-pane" role="tabpanel"
+                    aria-labelledby="reviews" tabindex="0">
+                    <div class="my-3 text-gray">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" style="width: 3rem; height: 3rem;" src="./images/Square 38.png"
+                                alt="Emily Selman.">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-0">Emily Selman</h4>
+                                <div class="d-flex align-items-center mt-1">
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fst-italic mt-2">
+                            <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd
+                                amount of snacks for the many long and hungry flights.</p>
+                        </div>
+                    </div>
+                    <hr class="my-2">
+                    <div class="my-3 text-gray">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" style="width: 3rem; height: 3rem;" src="./images/Square 38.png"
+                                alt="Emily Selman.">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-0">Hector Gibbons</h4>
+                                <div class="d-flex align-items-center mt-1">
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fst-italic mt-2">
+                            <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd
+                                amount of snacks for the many long and hungry flights.</p>
+                        </div>
+                    </div>
+                    <hr class="my-2">
+                    <div class="my-3 text-gray">
+                        <div class="d-flex align-items-center">
+                            <img class="rounded-circle" style="width: 3rem; height: 3rem;" src="./images/Square 38.png"
+                                alt="Emily Selman.">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-0">Mark Edwards</h4>
+                                <div class="d-flex align-items-center mt-1">
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i style="color: #facc15;" class="fas fa-star"></i>
+                                    <i class="fas fa-star text-gray-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fst-italic mt-2">
+                            <p>This is the bag of my dreams. I took it on my last vacation and was able to fit an absurd
+                                amount of snacks for the many long and hungry flights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <!-- Section: Social media -->
+        <section class="center px-4 py-3 text-bg-sea-green flex-column flex-sm-row">
+            <!-- Left -->
+            <div class="me-sm-5">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="social-links">
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold w-fit">Master Book Bank</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Products</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p>
+                            <a href="#">Link 1</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 2</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 3</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 4</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Useful links</h6>
+                        <p>
+                            <a href="#">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a href="#">Master Book Bank</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>
