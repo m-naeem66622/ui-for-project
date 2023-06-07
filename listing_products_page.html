@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom_styles.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+</head>
+
+<body>
+    <header class="sticky-top shadow-lg">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5" href="#">Master Book Bank</a>
+                <div class="offcanvas offcanvas-start text-bg-light" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link active" aria-current="page" href="#">Novels</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">Academic Books</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">PPSC</a>
+                            </li>
+                            <li class="nav-item fw-medium">
+                                <a class="nav-link" href="#">Fictions</a>
+                            </li>
+                            <div class="d-lg-none d-flex">
+                                <li class="nav-item btn btn-sea-green fw-medium link-custom me-3 px-3 py-0">
+                                    <a class="nav-link" href="#">Signup</a>
+                                </li>
+                                <li class="nav-item btn btn-sea-green fw-medium link-custom px-3 py-0">
+                                    <a class="nav-link" href="#">Signin</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center list-unstyled">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item fw-medium">
+                            <a class="nav-link d-none d-lg-block" href="#">Signup</a>
+                        </li>
+                        <li class="nav-item fw-medium">
+                            <a href="#searchToggle" class="nav-link" data-bs-toggle="offcanvas" role="button"
+                                aria-controls="searchToggle">
+                                <i class="fas fa-magnifying-glass fs-5"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item fw-medium ps-2">
+                            <a href="#" class="nav-link position-relative">
+                                <i class="fas fa-bag-shopping fs-5"></i>
+                                <span
+                                    class="center position-absolute top-0 start-100 translate-middle-x bg-sea-green rounded-circle"
+                                    style="font-size: 12px;min-width: 20px;min-height: 20px;">
+                                    <span>5</span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-center bg-transparent w-100 px-2 align-items-center" id="searchToggle">
+            <div class="input-group w-100" style="max-width: 500px;">
+                <input type="text" class="form-control search-wrap border-gray" style="padding: 0.75rem;"
+                    placeholder="Search By Book Title" aria-label="">
+                <select name="" id="" class="form-select border-gray" style="max-width: 130px; z-index: 10;">
+                    <option value="">Title</option>
+                    <option value="">Author</option>
+                    <option value="">Category</option>
+                    <option value="">Publisher</option>
+                </select>
+                <div class="btn btn-light center px-3 border-gray border-start-0">
+                    <i class="fas fa-magnifying-glass fs-5 text-gray"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="width-100 d-flex center text-bg-sea-green">
+        <nav class="py-4"
+            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb m-0 fs-4">
+                <li class="breadcrumb-item"><a href="#"><strong>Home</strong></a></li>
+                <li class="breadcrumb-item"><a href="#"><strong>Categories</strong></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><strong>Novels</strong></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="d-grid grid-template-columns w-fit" style="row-gap: 1.5rem; column-gap: 0.75rem;">
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <!-- <span
+                        class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                        style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                        <span>70%</span>
+                        <span>Off</span>
+                    </span> -->
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <!-- <button type="button"
+                        class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                        style="transition: all 0.2s; width: 110px;">
+                        <i class="fa-solid fa-cart-plus fs-5"></i>
+                        <span class="ms-2 fs-6">Add</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                        <i class="fas fa-bag-shopping fs-5"></i>
+                        <span class="ms-2 fs-6">Buy Now</span>
+                    </button> -->
+                        <em class="text-danger text-center w-100 fw-bold py-1">
+                            Out of stock
+                        </em>
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <span class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                            style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                            <span>70%</span>
+                            <span>Off</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                            style="transition: all 0.2s; width: 110px;">
+                            <i class="fa-solid fa-cart-minus fs-5"></i>
+                            <span class="ms-2 fs-6">Remove</span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bag-shopping fs-5"></i>
+                            <span class="ms-2 fs-6">Buy Now</span>
+                        </button>
+                        <!-- <em class="text-danger text-center w-100 fw-bold py-1">
+                        Out of stock
+                    </em> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <span class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                            style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                            <span>70%</span>
+                            <span>Off</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                            style="transition: all 0.2s; width: 110px;">
+                            <i class="fa-solid fa-cart-plus fs-5"></i>
+                            <span class="ms-2 fs-6">Add</span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bag-shopping fs-5"></i>
+                            <span class="ms-2 fs-6">Buy Now</span>
+                        </button>
+                        <!-- <em class="text-danger text-center w-100 fw-bold py-1">
+                        Out of stock
+                    </em> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <!-- <span
+                        class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                        style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                        <span>70%</span>
+                        <span>Off</span>
+                    </span> -->
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <!-- <button type="button"
+                        class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                        style="transition: all 0.2s; width: 110px;">
+                        <i class="fa-solid fa-cart-plus fs-5"></i>
+                        <span class="ms-2 fs-6">Add</span>
+                    </button>
+                    <button type="button"
+                        class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                        <i class="fas fa-bag-shopping fs-5"></i>
+                        <span class="ms-2 fs-6">Buy Now</span>
+                    </button> -->
+                        <em class="text-danger text-center w-100 fw-bold py-1">
+                            Out of stock
+                        </em>
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <span class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                            style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                            <span>70%</span>
+                            <span>Off</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                            style="transition: all 0.2s; width: 110px;">
+                            <i class="fa-solid fa-cart-minus fs-5"></i>
+                            <span class="ms-2 fs-6">Remove</span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bag-shopping fs-5"></i>
+                            <span class="ms-2 fs-6">Buy Now</span>
+                        </button>
+                        <!-- <em class="text-danger text-center w-100 fw-bold py-1">
+                        Out of stock
+                    </em> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <span class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                            style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                            <span>70%</span>
+                            <span>Off</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                            style="transition: all 0.2s; width: 110px;">
+                            <i class="fa-solid fa-cart-plus fs-5"></i>
+                            <span class="ms-2 fs-6">Add</span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bag-shopping fs-5"></i>
+                            <span class="ms-2 fs-6">Buy Now</span>
+                        </button>
+                        <!-- <em class="text-danger text-center w-100 fw-bold py-1">
+                        Out of stock
+                    </em> -->
+                    </div>
+                </div>
+            </div>
+            <div class="card h-100 pt-3 text-gray" style="width: 270px; min-width: 270px;">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="position-relative">
+                        <a class="link-unstyled" href="#">
+                            <img src="./images/1682872294840.jpg"
+                                class="card-img-top w-auto rounded-0  border border-white border-4 shadow-disperse"
+                                style="max-height: 275px; max-width: 210px ;" alt="Book Cover" />
+                        </a>
+                        <span class="position-absolute badge rounded-circle bg-sea-green center flex-column fs-normal"
+                            style="width: 40px; height: 40px; right: -10px; top: -10px;">
+                            <span>70%</span>
+                            <span>Off</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body d-flex flex-column justify-content-between pb-1">
+                    <h5 class="card-title text-center" style="height: 45px;">Baang-e-Dara</h5>
+                    <p class="card-subtitle text-truncate">
+                        <strong>By: </strong>
+                        <a href="#" title="Nasir Iftikhar" class="card-subtitle me-1">Nasir Iftikhar</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Paulo Coelho</a>
+                        <a href="#" title="Paulo Coelho" class="card-subtitle me-1">Scott Fingrzland</a>
+                    </p>
+                    <p class="card-text"><strong>Price: </strong>987</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between">
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center"
+                            style="transition: all 0.2s; width: 110px;">
+                            <i class="fa-solid fa-cart-plus fs-5"></i>
+                            <span class="ms-2 fs-6">Add</span>
+                        </button>
+                        <button type="button"
+                            class="btn btn-sea-green btn-sm d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bag-shopping fs-5"></i>
+                            <span class="ms-2 fs-6">Buy Now</span>
+                        </button>
+                        <!-- <em class="text-danger text-center w-100 fw-bold py-1">
+                        Out of stock
+                    </em> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <!-- Section: Social media -->
+        <section class="center px-4 py-3 text-bg-sea-green flex-column flex-sm-row">
+            <!-- Left -->
+            <div class="me-sm-5">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="social-links">
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="me-4 fs-5 text-decoration-none">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="links">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold w-fit">Master Book Bank</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Products</h6>
+                        <!-- <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" /> -->
+                        <p>
+                            <a href="#">Link 1</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 2</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 3</a>
+                        </p>
+                        <p>
+                            <a href="#">Link 4</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Useful links</h6>
+                        <p>
+                            <a href="#">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="d-flex flex-column align-items-center col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold w-fit">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a href="#">Master Book Bank</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+</body>
+
+</html>
