@@ -69,7 +69,8 @@
 .form-control {
     border-color: var(--bs-sea-green);
 }
-.form-control:focus {
+.form-control:focus,
+.form-check-input:focus {
     border-color: #24e5d2;
     box-shadow: 0 0 0 0.25rem rgba(var(--bs-sea-green-rgb), 0.25);
 }
@@ -123,10 +124,21 @@
 }
 .shadow-disperse {
     transition: 0.2s ease;
-    filter: drop-shadow(0px 10px 10px rgba(0,0,0,.5));
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
 }
 .shadow-disperse:hover {
-    filter: drop-shadow(0px 0px 3px rgba(0,0,0,.6));
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.6));
+}
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #cccccc;
+}
+.form-check-input:checked {
+    background-color: var(--bs-sea-green);
+    border-color: var(--bs-sea-green);
 }
 /* bootstrap modification */
 
