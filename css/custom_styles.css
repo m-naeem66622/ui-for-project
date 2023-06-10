@@ -5,9 +5,6 @@
 }
 
 /* bootstrap modification */
-:root {
-    --bs-grid-template-columns: "repeat(4, minmax(0, 1fr))";
-}
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -175,25 +172,6 @@ header .nav-item.btn:active a {
     #searchToggle .form-select {
         max-width: 42px !important;
         padding-left: 0.25rem;
-    }
-}
-.grid-template-columns {
-    --bs-grid-template-columns: repeat(1, minmax(0, 1fr));
-    grid-template-columns: var(--bs-grid-template-columns);
-}
-@media (min-width: 768px) {
-    .grid-template-columns {
-        --bs-grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-@media (min-width: 992px) {
-    .grid-template-columns {
-        --bs-grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-@media (min-width: 1200px) {
-    .grid-template-columns {
-        --bs-grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 /* Search Bar Styling */
