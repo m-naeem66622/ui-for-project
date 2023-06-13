@@ -137,6 +137,14 @@
     background-color: var(--bs-sea-green);
     border-color: var(--bs-sea-green);
 }
+.dropdown-menu,
+.dropdown-menu {
+    --bs-dropdown-link-active-color: var(--bs-light);
+    --bs-dropdown-link-active-bg: var(--bs-sea-green);
+}
+.fs-7 {
+    font-size: 0.875rem !important;
+}
 /* bootstrap modification */
 
 .center {
@@ -187,6 +195,23 @@ header .nav-item.btn:active a {
     padding: 0 25%;
 }
 /* Single Product Page Styling */
+
+/* Filters Section Styling */
+.filterItems a:hover,
+.filterItems .btn-link:hover {
+    color: var(--bs-sea-green);
+    cursor: pointer;
+}
+.filterItems a:active,
+.filterItems .btn-link:active {
+    color: var(--bs-amaranth-purple);
+}
+@media (min-width: 992px) {
+    #filters {
+        width: 250px;
+    }
+}
+/* Filters Section Styling */
 
 /* @media (min-width: 425px) {
     .breadcrumb  {
