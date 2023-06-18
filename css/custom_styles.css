@@ -169,6 +169,11 @@ header .nav-item.btn:hover a {
 header .nav-item.btn:active a {
     color: var(--bs-amaranth-purple);
 }
+.navbar-top{
+    --bs-navbar-color: var(--bs-light);
+    --bs-navbar-hover-color: var(--bs-sea-green);
+    --bs-navbar-active-color: var(--bs-sea-green);
+}
 /* Navbar Styling */
 
 /* Search Bar Styling */
